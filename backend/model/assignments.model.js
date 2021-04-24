@@ -13,8 +13,7 @@ const assignmentSchema = new schema({
     required : true,
   },
   assignmentDesc : {
-    type : String,
-    required : true
+    type : String
   }
 }, {
   timestamps : true
