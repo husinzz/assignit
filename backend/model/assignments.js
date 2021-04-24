@@ -4,16 +4,17 @@ const schema = mongoose.Schema;
 const assignmentSchema = new schema({
   assignmentName : {
     type : String,
-    required : 'Name cannot be empty',
+    required : true,
     trim : true,
     minleght : 3
   },
   assignmentLink : {
     type : String,
-    required : 'Assignment link cannot be empty!!!',
+    required : true,
   },
   assignmentDesc : {
-    type : String
+    type : String,
+    required : true
   }
 }, {
   timestamps : true

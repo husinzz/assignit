@@ -22,6 +22,8 @@ connection.once('open', () => {
   console.log('Database connection established sucesfully')
 })
 
+app.use('/', require('./routers/assignments.js'));
+
 app.listen(port, () => {
   console.log('Backend server is running in : http://localhost:' + port)
 })
